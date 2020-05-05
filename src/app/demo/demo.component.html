@@ -1,0 +1,70 @@
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <br>
+      <br>
+      <h4>PRAKHAR PANDEY</h4>
+      <h2>1626035</h2>
+      <img  class="images" src="assets/calculator-graphic.png" width="300" height="300"/>      
+    </div>
+
+    <div class="col-sm-9">
+        <h1>CALCULATOR</h1>
+      <hr>
+      <div class="row">
+        <div class="form-group">
+          <h6>ENTER FIRST NUMBER</h6>
+              <input 
+              [(ngModel)]="myInput1"
+              #input1
+               type="number"
+               class="form-control"
+                placeholder="first number"
+              >
+        </div>
+      </div>
+        <hr>
+        <div class="row">
+          <div class="form-group">
+            <h6>ENTER SECOND NUMBER</h6>
+                <input 
+                [(ngModel)]="myInput2"
+                 type="number"
+                 class="form-control"
+                  placeholder="second number"
+                >
+          </div>
+        </div>
+
+    <h4>RESULT={{this.sum}}</h4>
+    <br>
+    <br>
+    
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" (click)="addition()" class="btn btn-secondary">ADDITION</button>
+      <button type="button" (click)="substraction()" class="btn btn-secondary">SUBSTRACTION</button>
+      <button type="button" (click)="multiplication()" class="btn btn-secondary">MULTIPLICATION</button>
+      <button type="button" (click)="division()" class="btn btn-secondary">DIVISION</button>
+
+    </div>
+    
+    
+      </div>
+    <hr>
+    <hr>
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">Copyright</div>
+          <div class="col-md-6 text-right">{{today | date:'fullDate'}} {{today | date:'h:mm:ss a'}}</div>
+        </div>
+      
+      </footer>
+
+   </div>
+   
+  </div>
+
+
+
+
+
